@@ -17,7 +17,6 @@ router.get('/getReviews/:user_id', async (req, res) => {
 
 router.post('/postReview', async (req, res) => {
   try {
-    console.log('this is the req.body ', req.body)
     result = await Review.postReviews(req.body);
     res.status(200).send(result);
   } catch (error) {
