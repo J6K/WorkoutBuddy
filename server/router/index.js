@@ -6,5 +6,6 @@ router.use('/friends', require('../db/Friends/FriendRouter'));
 router.use('/accomplishments', require('../db/Accomplishments/AccomplishmentRouter'));
 // router.use('/workouts', require('../db/Workout/WorkoutRouter'));
 router.use('/reviews', require('../db/Reviews/ReviewRouter'));
+router.use('/messages', require('../db/Messages/MessageRouter'));
 
 module.exports = router;
